@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+}
+
+.grid {
+    display: grid;
+    margin: 0px auto;
+    max-width: 100%;
+    min-height: 100vh;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 16.5% 70% 13.5% ;
+    grid-template-areas:
+        "my-nav my-header my-header"
+        "my-section my-section my-aside"
+        "my-footer my-footer my-footer"
+    ;
+}
+
+header {
+    grid-area: my-header;
+    background-color: rgb(43, 205, 226);
+}
+
+nav {
+    grid-area: my-nav;
+    background-color: cornflowerblue;
+}
+
+
+aside {
+    grid-area: my-aside;
+    background-color: rgb(11, 216, 243);
+}
+
+section {
+    grid-area: my-section;
+    background-color: floralwhite;
+}
+
+footer {
+    grid-area: my-footer;
+    background-color: rgb(43, 205, 226);
+}
+.sec2{
+    text-align: center;
+    background-color: rgb(33, 49, 51);
+}
+
+.nombre{
+    float: right;
+    position: relative;
+    bottom: 170px;
+    left: -400px;
+    font-size: 17px;
+}
+.web-personal{
+    float: right;
+    position: relative;
+    bottom: 120px;
+    left: 80px;
+    font-size: 17px;
+}
+.inicio-sesion{
+    float: right;
+    position: relative;
+    bottom: 175px;
+    left: 620px;
+    font-size: 25px;
+} 
+
+
+
+.lbl-menu{
+    background-color: black;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.lbl-menu  label {
+    display: inline-block;
+    padding: 5px  0 ;
+    color: #fff;
+    cursor: pointer;
+    transition: all 400ms ease;
+    border-radius: blue;
+}
+
+
+.content{
+    position: relative;
+}
+.content div{
+    position: absolute;
+    line-height: 1.8;
+    transition: all 0ms ease; /* efecto de transicion de los contenidos */
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+#radio1,#radio2,#radio3,#radio4{
+    display: none;
+}
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4
+{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
