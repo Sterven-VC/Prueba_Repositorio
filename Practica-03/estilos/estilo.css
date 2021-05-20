@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+}
+
+.Inicio,
+.Curriculum,
+.Proyectos,
+.Contactos{
+    border: solid 1px;
+    border-color: white;
+    width: 99%;
+    height: 25%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+      
+}
+
+.grid {
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0% auto;
+    display: grid;
+    max-width: 100%;
+    min-height: 100vh;
+    grid-template-columns: 10% 75% 15%;
+    grid-template-rows: 20% 75% 25% ;
+    grid-template-areas: 
+    "my-nav my-header my-header" 
+    "my-section my-section my-aside"
+     "my-footer my-footer my-footer";
+}
+
+.iniciarSesion{
+    border: dotted;
+    color: rgb(0, 60, 170);
+}
+
+
+.menu{
+    padding: 5%;
+    margin: 5%;
+}
+
+
+.enlaces{
+    padding: 5%;
+    margin: 5%;
+}
+
+
+header {
+    grid-area: my-header;
+    background-color:  rgb(0, 158, 179);
+    
+}
+
+nav {
+    grid-area: my-nav;
+    background-color: chartreuse;
+   
+}
+
+
+aside {
+    grid-area: my-aside;
+    background-color: rgb(104, 245, 255);
+    
+}
+
+.menu,
+.enlaces{
+    background-color: rgb(0, 158, 179);
+    border: dashed;
+}
+
+
+section {
+    grid-area: my-section;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+footer {
+    grid-area: my-footer;
+    background-color: rgb(0, 158, 179);
+        
+}
+
+.nombre{
+    float: right;
+    position: relative;
+    bottom: 150px;
+    left: -290px;
+    font-size: 30px;
+    
+}
+.web-personal{
+    float: right;
+    position: relative;
+    bottom: 70px;
+    left: 30%;
+    font-size: 20px;
+}
+
+.iniciarSesion{
+    position: absolute;
+    right: 2%;
+    bottom: 94%;
+    font-size: 20px;
+}
+
+#caja5{
+    float: left;
+    padding: 1%;
+}
+
+.noticia-texto{
+    padding: 1%;
+    text-align: justify;
+    width: 94%;
+    left: 80%;
+    
+}
+
+
+.textoWeb{
+    color: white;
+    text-align: center;
+}
+
+.infromacion{
+    float: left;
+    border: solid;
+    background-color:  rgb(0, 158, 179);
+}
+
+
+.Info{
+    float: right;
+    position: relative;
+    bottom: -15px;
+    right: 880px;
+    font-size: 15px;
+    font-family: Verdana
+}
+
+.Siguenos{
+    float: right;
+    position: relative;
+    bottom: -15px;
+    right: 350px;
+    font-size: 15px;
+    font-family: Verdana
+}
+
+.Enlace{
+    float: right;
+    position: relative;
+    bottom: -15px;
+    right: -90px;
+    font-size: 15px;
+    font-family: Verdana
+}
+
+.MenuF{
+    float: right;
+    position: relative;
+    bottom: -15px;
+    right: -500px;
+    font-size: 15px;
+    font-family: Verdana
+}
